@@ -5,10 +5,12 @@ and the texture generation; the browser only draws.
 
 ## Run
 
+Requires Go 1.26 or newer. From the repository root:
+
 ```bash
-cd solar-system-go
-go build -o solarsystem.exe .
-./solarsystem.exe            # http://127.0.0.1:8080
+go run .                     # http://127.0.0.1:8080
+go build -o solarsystem .    # or build a binary (solarsystem.exe on Windows)
+./solarsystem -addr 127.0.0.1:9000   # pick another port
 ```
 
 Standard library only, no modules to download. Tests: `go test ./...`.
@@ -69,3 +71,10 @@ pointing a telescope.
 Surface textures are procedural illustrations generated in `surface.go`
 (bands, a Great Red Spot, a Neptune dark spot, Pluto's bright Sputnik Planitia
 heart, cratered terrain), not photographs.
+
+## Security
+
+See [SECURITY.md](SECURITY.md) for how to report a vulnerability privately.
+CI runs `go vet`, `go test` and `govulncheck` on every push and pull request,
+CodeQL scans the Go, JavaScript and workflow code weekly, and Dependabot keeps
+Go modules and GitHub Actions up to date.
