@@ -78,3 +78,7 @@ See [SECURITY.md](SECURITY.md) for how to report a vulnerability privately.
 CI runs `go vet`, `go test` and `govulncheck` on every push and pull request,
 CodeQL scans the Go, JavaScript and workflow code weekly, and Dependabot keeps
 Go modules and GitHub Actions up to date.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
