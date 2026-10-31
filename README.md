@@ -3,6 +3,8 @@
 An educational, real-ephemeris model of the solar system. Go does the physics
 and the texture generation; the browser only draws.
 
+![Solar system view with planets, dwarf planets, comets and the asteroid and Kuiper belts](docs/screenshot.png)
+
 ## Run
 
 Requires Go 1.26 or newer. From the repository root:
